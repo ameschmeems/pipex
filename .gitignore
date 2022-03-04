@@ -1,0 +1,6 @@
+.DS_Store
+pipex
+**/*.o
+pipex.dSYM
+infile
+outfile

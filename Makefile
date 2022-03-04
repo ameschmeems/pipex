@@ -1,6 +1,14 @@
 NAME		:=	pipex
 
-SRCS		:=
+SRCS		:=	srcs/main.c \
+				srcs/error.c \
+				srcs/utils.c \
+				srcs/ft_split.c \
+				srcs/ft_strchr.c \
+				srcs/ft_strlcpy.c \
+				srcs/ft_strlen.c \
+				srcs/ft_calloc.c \
+				srcs/ft_bzero.c
 
 OBJS		:=	${SRCS:.c=.o}
 
@@ -13,7 +21,7 @@ INCLUDES	:= ./includes
 all:		${NAME}
 
 ${NAME}:	${OBJS}
-		${CC} ${OBJS} -0 ${NAME}
+		${CC} ${OBJS} -o ${NAME}
 
 clean:
 		rm -f ${OBJS}
